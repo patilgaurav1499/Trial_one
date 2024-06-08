@@ -1,12 +1,14 @@
+#Written to create all files and folders 
+
 import os
 from pathlib import Path #to create system compatible path ['/']
 #import logging
 
 lis_of_files = [
-    ".github/workflows/.gitkeep",
-    "src/__init__.py", #src folder contains source code
-    "src/components/__init__.py",
-    "src/components/data_ingestion.py",
+    ".github/workflows/.gitkeep", #Github folder will be used for deployemnt, entire configuration for continuos integration and Continuous deployement
+    "src/__init__.py", #src folder contains entire source code
+    "src/components/__init__.py", #components folder has to be used for different ML components like data ingestion, data transformation, fe, model training, model eval 
+    "src/components/data_ingestion.py", 
     "src/components/data_transformation.py",
     "src/components/model_trainer.py",
     "src/components/model_evaluation.py",
@@ -16,7 +18,7 @@ lis_of_files = [
     "src/utils/__init__.py",
     "src/utils/utils.py",
     "src/logger/logging.py",
-    "src/exception/exception",
+    "src/exception/exception.py",
     "tests/unit/__init__.py",
     "tests/integration/__init__.py",
     "init_setup.sh",
@@ -26,7 +28,7 @@ lis_of_files = [
     "setup.cfg",
     "pyproject.toml",
     "tox.ini",
-    "experiment/experiments.ipynb"
+    "experiment/experiments.ipynb" #Exp folder has to be used for experiement like diff small codes instead of using python kernel
 ]
 
 for filepath in lis_of_files:
