@@ -21,7 +21,7 @@ lis_of_files = [
     "src/exception/exception.py",
     "tests/unit/__init__.py", #file for unit testing 
     "tests/integration/__init__.py", #file for integration testing
-    "init_setup.sh", #to initialize the setup
+    "init_setup.sh", #to initialize the setup #write Linux commands to be run on command pallet
     "requirements.txt",
     "requirements_dev.txt",
     "setup.py",
